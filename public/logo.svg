@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none">
+  <defs>
+    <linearGradient id="logo-bg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a1a1a"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield badge monogram -->
+  <g transform="translate(2, 2)">
+    <path d="M20 2L36 10V24C36 32 28 40 20 44C12 40 4 32 4 24V10L20 2Z" fill="url(#logo-bg)"/>
+    <!-- C-E monogram -->
+    <path d="M27 12C27 12 22 10 18 14C14 18 14 24 18 28C22 32 27 30 27 30" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <line x1="20" y1="17" x2="26" y2="17" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="19" y1="23" x2="25" y2="23" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Shield outline -->
+    <path d="M20 2L36 10V24C36 32 28 40 20 44C12 40 4 32 4 24V10L20 2Z" stroke="white" stroke-opacity="0.1" stroke-width="0.5" fill="none"/>
+  </g>
+  <!-- Text -->
+  <text x="50" y="20" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" letter-spacing="0.06em" fill="#171717">CHINA AUTO</text>
+  <text x="50" y="36" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="11" letter-spacing="0.12em" fill="#737373">EXPORT</text>
+</svg>
