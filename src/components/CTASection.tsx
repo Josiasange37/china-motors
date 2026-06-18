@@ -6,8 +6,6 @@ import { MessageCircle, ArrowRight, CircleCheck } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const features = [
   "Verified vehicle sourcing from trusted Chinese markets",
   "Multilingual support for international buyers",
@@ -19,6 +17,7 @@ export default function CTASection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-cta-left] > *",

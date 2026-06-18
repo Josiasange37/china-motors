@@ -5,12 +5,11 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Footer() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-footer-content] > *",
@@ -28,7 +27,7 @@ export default function Footer() {
       <div data-footer-content className="site-container py-6 md:py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
           <div className="col-span-2 md:col-span-1">
-            <img alt="China Auto Export" src="/logo.svg" className="h-10 w-auto mb-3 brightness-0 invert" />
+            <img alt="China Auto Export" src="/logo.svg" className="h-10 w-auto mb-3 brightness-0 invert" loading="lazy" decoding="async" />
             <p className="text-sm text-gray-400 mt-2 leading-relaxed">China Auto Export Experts</p>
             <div className="flex gap-3 mt-5">
               <button className="w-9 h-9 bg-brand-400/20 hover:bg-brand-400 rounded-full flex items-center justify-center transition-colors group" type="button">

@@ -33,6 +33,8 @@ export default function VehicleDetailPage({ params }: { params: { id: string } }
                 alt={vehicle.title}
                 src={`/images/${vehicle.image}`}
                 className="object-cover w-full h-full"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div>

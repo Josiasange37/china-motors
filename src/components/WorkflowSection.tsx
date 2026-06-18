@@ -5,8 +5,6 @@ import { Search, FileCheck, Truck } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const steps = [
   {
     number: "01",
@@ -35,6 +33,7 @@ export default function WorkflowSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-wf-badge]",

@@ -6,8 +6,6 @@ import { Search, ArrowRight, MessageCircle, ShieldCheck, Clock3, Earth, Car } fr
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const brands = [
   "Toyota", "Zotye", "Porsche", "Buick", "Geely", "Haval",
   "Volkswagen", "BMW", "Jetour", "Jetour Shanhai", "Maserati",
@@ -32,6 +30,7 @@ export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 0.8 } });
       tl.fromTo("[data-hero-badge]", { y: 30, opacity: 0 }, { y: 0, opacity: 1 })
@@ -55,6 +54,7 @@ export default function HeroSection() {
           alt=""
           src="/banner.jpg"
           className="h-full w-full object-cover opacity-40"
+          fetchPriority="high"
         />
       </div>
 

@@ -8,14 +8,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { vehicles } from "@/data/vehicles";
 import VehicleCard from "@/components/VehicleCard";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const featuredVehicles = vehicles.slice(0, 8);
 
 export default function FeaturedVehiclesSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-fv-header] > *",

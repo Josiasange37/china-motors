@@ -11,6 +11,8 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
             src={`/images/${vehicle.image}`}
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             style={{ position: "absolute", height: "100%", width: "100%", inset: 0, color: "transparent" }}
+            loading="lazy"
+            decoding="async"
           />
           <div className="absolute left-3 top-3 flex gap-2">
             <span className="rounded-lg bg-white/90 px-2 py-1 text-xs font-medium text-gray-700">{vehicle.fuel}</span>

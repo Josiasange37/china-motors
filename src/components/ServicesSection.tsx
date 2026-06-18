@@ -5,8 +5,6 @@ import { ShieldCheck, Earth, FileText } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const services = [
   {
     icon: ShieldCheck,
@@ -32,6 +30,7 @@ export default function ServicesSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-svc-badge]",

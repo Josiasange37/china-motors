@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="site-container">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img alt="China Auto Export" src="/logo.svg" className="h-9 w-auto" />
+            <img alt="China Auto Export" src="/logo.svg" className="h-9 w-auto" decoding="async" />
           </Link>
           <div className="hidden md:flex items-center gap-20">
             <Link href="/" className="text-base font-semibold text-gray-700 hover:text-brand-600 transition-colors relative group">

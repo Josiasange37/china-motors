@@ -5,8 +5,6 @@ import { Car, Award, Earth, TrendingUp } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const stats = [
   { icon: Car, value: "500+", label: "Cars in Stock" },
   { icon: Award, value: "10", label: "Years of Experience" },
@@ -18,6 +16,7 @@ export default function StatsSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
       gsap.fromTo(
         "[data-stats-content] > *",
