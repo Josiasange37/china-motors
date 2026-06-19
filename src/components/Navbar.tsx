@@ -33,14 +33,14 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center gap-3">
             <div className="relative group flex items-center gap-1 text-sm text-gray-600">
-              <span className="font-medium">USD/CNY : 1$=¥6.7720</span>
+              <span className="font-medium">USD/FCFA : 1$=CFA 570</span>
               <svg className="lucide lucide-circle-help text-gray-400" fill="none" height="14" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="14">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
                 <path d="M12 17h.01" />
               </svg>
               <div className="pointer-events-none absolute top-full right-0 mt-2 whitespace-nowrap rounded-lg bg-gray-900 px-2.5 py-1.5 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100">
-                Refreshes daily at Beijing time 09:00
+                Indicative rate — 1 USD ≈ 570 FCFA
               </div>
             </div>
             <div className="relative">
